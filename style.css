@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+}
+.is-visible,
+#next-buttons {
+  visibility: hidden;
+}
+.select-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#display-array {
+  font-size: 30px;
+}
+#remove {
+  background: initial;
+  color: initial;
+}
+@media only screen and (max-width: 480px) {
+  .select-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .select-buttons button {
+    width: 100%;
+    max-width: 200px; /* Adjust this value as needed */
+    padding: 10px; /* Adjust padding as needed */
+    margin: 0 auto; /* Center the buttons horizontally */
+  }
+  select {
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
